@@ -2,6 +2,9 @@
 
 Portfolio website created with ReactJS, Tailwind CSS.
 
+![portfolio2](https://github.com/deepeshsharmaofficial/react-portfolio/assets/91846967/9133d32a-3ed6-40d6-965d-f75bf670a3ad)
+
+
 [Visit Now](https://deepeshsharma.netlify.app/) 🚀
 
 ## 🖥️ Tech Stack
