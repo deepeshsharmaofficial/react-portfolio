@@ -12,7 +12,7 @@ const Footer = () => {
                 {
                     socialMedia.map((social) => (
                         <div key={social.id} className="p-3 rounded-full text-lg text-gray-700 bg-gray-100 transition-colors">
-                            <a href={social.link}>
+                            <a href={social.link} target="_blank">
                                 {React.createElement(Fa[`${social.icon}`])}
                             </a>
                         </div>

@@ -26,15 +26,15 @@ const Project = ({projects}) => {
                                 <div className="flex">
                                     {
                                         project.links.visit && 
-                                        <a href={project.links.visit} className="hover:scale-110 bg-white text-gray-700 transition-all p-2"><BiLinkExternal size={20} /></a>
+                                        <a href={project.links.visit} target="_blank" className="hover:scale-110 bg-white text-gray-700 transition-all p-2"><BiLinkExternal size={20} /></a>
                                     }
                                     {
                                         project.links.code && 
-                                        <a href={project.links.code} className="hover:scale-110 bg-white text-gray-700 transition-all p-2"><FaGithub size={20} /></a>                                        
+                                        <a href={project.links.code} target="_blank" className="hover:scale-110 bg-white text-gray-700 transition-all p-2"><FaGithub size={20} /></a>                                        
                                     }
                                     {
                                     project.links.video && 
-                                        <a href={project.links.video} className="hover:scale-110 bg-white text-gray-700 transition-all p-2"><FaVideo size={20} /></a>                                        
+                                        <a href={project.links.video} target="_blank" className="hover:scale-110 bg-white text-gray-700 transition-all p-2"><FaVideo size={20} /></a>                                        
                                     }
                                 </div>
                             </div>

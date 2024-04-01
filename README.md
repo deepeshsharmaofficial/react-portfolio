@@ -29,17 +29,11 @@ $ cd react-portfolio/
 $ npm i
 ```
 
-#### 3. Set Up Environmental Variables
-
-- Rename `.env.sample` to `.env`
-- `VITE_REACT_APP_NEWSAPI` - Create an API key from [NewsAPI](https://newsapi.org/)
-- Add [NewsAPI](https://newsapi.org/) configuration to `.env`
-
-#### 4. Update data
+#### 3. Update data
 
 - Update the [`index.js`]() in `constants` folder
 
-#### 5. Run the project
+#### 4. Run the project
 
 ```sh
 $ npm run dev

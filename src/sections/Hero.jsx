@@ -25,7 +25,7 @@ const Hero = ({hero, socialMedia}) => {
                   {
                       socialMedia.map((social) => (
                           <div key={social.id} className="p-3 rounded-full text-lg text-white bg-blue-600 transition-colors">
-                              <a href={social.link}>
+                              <a href={social.link} target="_blank">
                                   {React.createElement(Fa[`${social.icon}`])}
                               </a>
                           </div>
