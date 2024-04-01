@@ -4,8 +4,7 @@ Portfolio website created with ReactJS, Tailwind CSS.
 
 ![portfolio2](https://github.com/deepeshsharmaofficial/react-portfolio/assets/91846967/9133d32a-3ed6-40d6-965d-f75bf670a3ad)
 
-
-[Visit Now](https://deepeshsharma.netlify.app/) 🚀
+[Visit Now](https://deepeshsharma.vercel.app/) 🚀
 
 ## 🖥️ Tech Stack
 
@@ -15,7 +14,7 @@ Portfolio website created with ReactJS, Tailwind CSS.
 
 **Deployed On:**
 
-![netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+![netlify](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 
 ## Getting started
