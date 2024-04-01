@@ -12,12 +12,8 @@ const NewsSection = () => {
     const getData = async () => {
       setLoading(true);
       try {
-        const res = await axios.get(
-          `https://newsapi.org/v2/everything?q=coding&apiKey=${
-            import.meta.env.VITE_REACT_APP_NEWSAPI
-          }&pageSize=3`
-        );
-        setItems(res.data.articles);
+        const res = await axios.get("https://api.spaceflightnewsapi.net/v4/articles/?limit=3&offset=1");
+        setItems(res.data.results);
       } catch (error) {
         console.log("Error: ", error);
       }

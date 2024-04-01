@@ -1,3 +1,4 @@
+// https://github.com/TheSpaceDevs/Tutorials/
 import axios from "axios";
 import { useEffect, useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
@@ -6,9 +7,8 @@ import NewsCard from "../component/NewsCard";
 
 const News = () => {
   const [items, setItems] = useState([]);
-  console.log("items: ", items);
   const [hasMore, setHasMore] = useState(true);
-  const [index, setIndex] = useState(2);
+  const [index, setIndex] = useState(11);
   const [load, setLoad] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -17,13 +17,8 @@ const News = () => {
     const getData = async () => {
       setLoad(true);
       try {
-        const res = await axios.get(
-          `https://newsapi.org/v2/everything?q=coding&apiKey=${
-            import.meta.env.VITE_REACT_APP_NEWSAPI
-          }&pageSize=10&page=1`
-        );
-
-        setItems(res.data.articles);
+        const res = await axios.get("https://api.spaceflightnewsapi.net/v4/articles/?limit=10&offset=1");
+        setItems(res.data.results);
       } catch (error) {
         console.log("Error: ", error);
       }
@@ -35,28 +30,19 @@ const News = () => {
   const fetchMoreData = async () => {
     setLoading(true);
     try {
-      const res = await axios.get(
-        `https://newsapi.org/v2/everything?q=coding&apiKey=${
-          import.meta.env.VITE_REACT_APP_NEWSAPI
-        }&pageSize=10&page=${index}`
-      );
-      
-      setItems((prevItems) => [...prevItems, ...res.data.articles]);
-
-    //   res.data.articles.length > 0 ? setHasMore(true) : setHasMore(false);
-        // Disable loader if all available items have been loaded
-        if (items.length == res.data.totalResults) {
+        const res = await axios.get(`https://api.spaceflightnewsapi.net/v4/articles/?limit=10&offset=${index}`);
+      setItems((prevItems) => [...prevItems, ...res.data.results]);
+         if (items.length == res.data.count) {
             setHasMore(false);
         }
   
-        console.log('res.data.articles.length: ', res.data.articles.length);
     
     } catch (error) {
         setHasMore(false);
         console.log("Error: ", error);
     }
     setLoading(false);
-    setIndex((prevIndex) => prevIndex + 1);
+    setIndex((prevIndex) => prevIndex + 10);
   };
 
   return (
@@ -67,7 +53,6 @@ const News = () => {
         dataLength={items.length}
         next={fetchMoreData}
         hasMore={hasMore}
-        // hasMore={items.length !== totalResults}
         loader={ loading && <Loader />}
       >
        
