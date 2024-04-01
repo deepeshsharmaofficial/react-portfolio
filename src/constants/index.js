@@ -1,4 +1,4 @@
-import {gtbitCollege, spsSchool2, jioSaavnProject, buyBusyProject, ComingSoon, DeepeshSharma, wavingHand, } from "../assets/images";
+import {gtbitCollege, spsSchool2, jioSaavnProject, buyBusyProject, ComingSoon, DeepeshSharma, wavingHand, portfolioProject, } from "../assets/images";
 
 export const navLinks = [
     { id: "0", href: "/#home", label: "Home" },
@@ -112,6 +112,17 @@ export const projects = [
       },
       {
         id: "1",
+        name: "Portfolio",
+        techstack: "ReactJS, TailwindCSS",
+        image: portfolioProject,
+        links: {
+          visit: "https://deepeshsharma.netlify.app/",
+          code: "https://github.com/deepeshsharmaofficial/react-portfolio",
+          video: "",
+        }
+      },
+      {
+        id: "2",
         name: "Jio Savan Clone",
         techstack: "HTML, CSS, JavaScript",
         image: jioSaavnProject,
@@ -122,7 +133,7 @@ export const projects = [
         }
       },
       {
-        id: "2",
+        id: "3",
         name: "Thread Clone",
         techstack: "ReactJs, MongoDB, ExpressJS, NodeJS",
         image: ComingSoon,
@@ -132,17 +143,7 @@ export const projects = [
           video: "",
         }
       },
-      {
-        id: "3",
-        name: "Portfolio",
-        techstack: "ReactJS, TailwindCSS",
-        image: ComingSoon,
-        links: {
-          visit: "",
-          code: "",
-          video: "",
-        }
-      }
+      
 ]
 
 export const socialMedia = [

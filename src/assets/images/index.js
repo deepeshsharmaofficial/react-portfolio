@@ -5,6 +5,7 @@ import spsSchool2 from "./sps2.jpg"
 import jioSaavnProject from "./jiosaavn.png"
 import buyBusyProject from "./buybusy.png"
 import ComingSoon from "./comingsoon.jpg"
+import portfolioProject from "./portfolio.png"
 
 import DeepeshSharma from "./deepesh.png";
 
@@ -12,6 +13,7 @@ import wavingHand from "./waving-hand.gif"
 import heroBackground from "./herobackground.webp"
 
 import dsLogo from "./dslogo.png"
+
 
 export {
     gtbitCollege,
@@ -23,5 +25,6 @@ export {
     DeepeshSharma,
     wavingHand,
     heroBackground,
-    dsLogo
+    dsLogo,
+    portfolioProject
 }
