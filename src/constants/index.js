@@ -21,8 +21,7 @@ export const about = {
   name: "Deepesh Sharma",
   title: "Full Stack Developer",
   aboutImage: DeepeshSharma,
-  about2: "I am a Full-Stack developer based in Pune, India. I'm an Information Technology undergraduate from SPPU, and my journey in web development began during my first year of college. I'm passionate about creating beautiful, functional, and user-friendly websites and applications, and I'm constantly pushing myself to learn and grow as a developer. Love building full-stack clones and side projects.",
-  about: "I am a Full-Stack developer based in Pune, India. I am pursuing my B. Tech from GTBIT with an aggregate of 81.5% through the 7th Semester. I have also participated in HackCBS Hackathon. Although, we didn’t win, but we learned a lot from the experience and were able to showcase our skills and creativity."
+  about: "I am a Full-Stack developer based in Delhi, India. I am pursuing my B. Tech from GTBIT with an aggregate of 81.5% through the 7th Semester. I have also participated in HackCBS Hackathon. Although, we didn’t win, but we learned a lot from the experience and were able to showcase our skills and creativity."
   ,
   resume: "https://drive.google.com/file/d/1DGl0ZVObDkkCJKEDQ6Akr2u5lSUTYrj4/view?usp=sharing"
 }
